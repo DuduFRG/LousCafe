@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Lou's Cafe Lisboa | Brunch Gourmet no Poço dos Negros</title>
+  <meta name="description" content="Cafe e restaurante de brunch gourmet em Lisboa. Pequeno-almoco, almoço e pastelaria caseira na Rua do Poco dos Negros 131. Opcoes vegan. Avaliacao 4.8/5 no Google." />
+  <meta name="keywords" content="brunch Lisboa, cafe Lisboa, pequeno almoço Lisboa, brunch gourmet Lisboa, Poço dos Negros cafe, Lou's Cafe, brunch vegan Lisboa, cafe Lisboa centro" />
+  <meta name="author" content="Lou's Cafe" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://louscafe.pt/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Lou's Cafe Lisboa | Brunch Gourmet" />
+  <meta property="og:description" content="O melhor brunch de Lisboa. Comida deliciosa, ambiente acolhedor e opcoes vegan. Avaliacao 4.8/5 com mais de 500 recensoes." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:url" content="https://louscafe.pt/" />
+  <meta property="og:locale" content="pt_PT" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lou's Cafe Lisboa | Brunch Gourmet" />
+  <meta name="twitter:description" content="Brunch gourmet no coração de Lisboa. Cafe de qualidade, pastelaria caseira e opcoes vegan." />
+  <meta name="twitter:image" content="images/hero.jpg" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Lou's Cafe",
+    "alternateName": "Lou's Cafe Lisboa",
+    "description": "Cafe de qualidade, com opcoes de comidas de pequeno almoco, almoco e pastelaria caseira. Especialidades de brunch em Lisboa.",
+    "url": "https://louscafe.pt",
+    "telephone": "+351938495560",
+    "email": "louscafe.lisboa@gmail.com",
+    "priceRange": "10-15",
+    "currenciesAccepted": "EUR",
+    "servesCuisine": ["Brunch", "Cafe", "Europeia", "Vegan"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua do Poco dos Negros 131",
+      "addressLocality": "Lisboa",
+      "postalCode": "1200-337",
+      "addressCountry": "PT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.7107,
+      "longitude": -9.1470
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "528",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "07:30", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday",    "opens": "07:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "07:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "07:30", "closes": "23:30" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/louscafe.lisboa/",
+      "https://www.facebook.com/lousbrunchlisboa"
+    ],
+    "hasMenu": "https://louscafelisboa.menulegal.app/",
+    "menu": "https://louscafelisboa.menulegal.app/"
+  }
+  </script>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" aria-label="Navegacao principal">
+    <a href="#inicio" class="nav__logo" aria-label="Lou's Cafe - Voltar ao inicio">
+      <img src="images/logo.png" alt="Lou's Cafe Lisboa logo" width="120" height="54" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#sobre">O Cafe</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#menu">Cardapio</a></li>
+      <li><a href="#delivery">Entrega</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="tel:+351938495560" class="nav__cta">Reservar</a></li>
+    </ul>
+
+    <button class="nav__hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" role="dialog" aria-label="Menu de navegacao">
+    <button class="nav__close" aria-label="Fechar menu">&times;</button>
+    <a href="#sobre">O Cafe</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#menu">Cardapio</a>
+    <a href="#delivery">Entrega</a>
+    <a href="#horarios">Horarios</a>
+    <a href="tel:+351938495560">Reservar</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="inicio" class="hero" aria-label="Bem-vindos ao Lou's Cafe">
+    <div class="hero__bg" role="img" aria-label="Interior acolhedor do Lou's Cafe Lisboa"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <span class="hero__eyebrow">Bem-vindos ao</span>
+      <h1 class="hero__title">
+        Lou's Cafe<br /><em>Lisboa</em>
+      </h1>
+      <p class="hero__sub">Brunch gourmet no coracão de Lisboa. Feito com amor, servido com cuidado.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Ver Cardapio</a>
+        <a href="tel:+351938495560" class="btn btn--outline">Fazer Reserva</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Descer</span>
+    </div>
+  </section>
+
+  <!-- ===================== MENU FLOATING CTA ===================== -->
+  <div class="menu-float" aria-label="Acesso rapido ao cardapio">
+    <a href="https://louscafelisboa.menulegal.app/" target="_blank" rel="noopener noreferrer" class="menu-float__btn" aria-label="Ver cardapio completo">
+      <svg class="menu-float__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-3M8 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H8V3zM9 12h6M9 16h4"/>
+      </svg>
+      <div class="menu-float__inner">
+        <span>Ver Cardapio</span>
+        <span class="menu-float__label-sub">Cardapio completo</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="sobre" class="about" aria-labelledby="sobre-titulo">
+    <div class="about__image reveal">
+      <img
+        src="images/interior-1.jpg"
+        alt="Interior luminoso e moderno do Lou's Cafe com mesa de marmore e plantas"
+        width="800"
+        height="600"
+        loading="lazy"
+      />
+    </div>
+    <div class="about__content">
+      <p class="section__label reveal">O Nosso Cafe</p>
+      <h2 id="sobre-titulo" class="section__title reveal reveal-delay-1">
+        Um lugar para<br /><em>encontros verdadeiros</em>
+      </h2>
+      <p class="section__body reveal reveal-delay-2">
+        Nascemos do desejo de criar um espaco onde cada refeicao e uma experiencia. No Lou's Cafe, o pequeno-almoco e o brunch sao preparados com ingredientes frescos, apresentados com detalhe e servidos num ambiente que convida a ficar.
+      </p>
+      <p class="section__body mt-sm reveal reveal-delay-3">
+        Na Rua do Poco dos Negros, no coracão de Lisboa, somos o destino favorito de quem valoriza qualidade, autenticidade e um atendimento que faz a diferenca.
+      </p>
+      <div class="about__stats reveal reveal-delay-4">
+        <div>
+          <span class="about__stat-num" data-count="4.8" data-suffix="">4.8</span>
+          <p class="about__stat-label">Avaliacao Google</p>
+        </div>
+        <div>
+          <span class="about__stat-num" data-count="528" data-suffix="+">528+</span>
+          <p class="about__stat-label">Recensoes</p>
+        </div>
+        <div>
+          <span class="about__stat-num">Vegan</span>
+          <p class="about__stat-label">Opcoes disponiveis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="galeria" class="gallery" aria-label="Galeria de imagens do Lou's Cafe">
+    <div class="gallery__item gallery__item--wide">
+      <img src="images/interior-2.jpg" alt="Zona de bancos com mesas verdes e decoracao boho do Lou's Cafe" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/food-salmon.jpg" alt="Filete de salmao grelhado sobre salada com flores comestiveis" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/drink-cappuccino.jpg" alt="Cappuccino com latte art servido em chavena rosa" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/food-avocado.jpg" alt="Tostas de abacate com ovo escalfado e flores comestiveis" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/food-eggs-benedict.jpg" alt="Ovos benedict com molho holandes e salada de folhas" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/drink-smoothie.jpg" alt="Smoothie de frutos vermelhos e limonada natural servidos no Lou's Cafe" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/food-croissant.jpg" alt="Croissant recheado com chocolate e avelas com acucar em po" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/food-spread.jpg" alt="Selecao de pratos de brunch do Lou's Cafe com smoothie verde" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU CTA ===================== -->
+  <section id="menu" class="menu-cta" aria-labelledby="menu-titulo">
+    <div class="menu-cta__watermark" aria-hidden="true">Cardapio</div>
+    <div class="menu-cta__inner">
+      <p class="section__label reveal">O que servimos</p>
+      <span class="menu-cta__badge reveal reveal-delay-1">Cardapio atualizado diariamente</span>
+      <h2 id="menu-titulo" class="section__title reveal reveal-delay-2">
+        Do pequeno-almoco<br /><em>ao fim da tarde</em>
+      </h2>
+      <p class="menu-cta__desc reveal reveal-delay-3">
+        Pastelaria caseira, tostas gourmet, ovos de todas as formas, smoothies frescos, cafes de especialidade e muito mais. O nosso cardapio foi criado para satisfazer todos os momentos do dia.
+      </p>
+      <div class="reveal reveal-delay-4">
+        <a
+          href="https://louscafelisboa.menulegal.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary"
+          aria-label="Abrir cardapio completo do Lou's Cafe numa nova janela"
+        >
+          Ver Cardapio Completo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOD STRIP ===================== -->
+  <section class="gallery" aria-label="Mais pratos do Lou's Cafe">
+    <div class="gallery__item">
+      <img src="images/food-prosciutto.jpg" alt="Tosta com presunto, figos e rucola com vinagrete" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/food-pancake.jpg" alt="Panqueca americana com guacamole e ovo escalfado" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/drink-green.jpg" alt="Smoothie verde com laranja desidratada e flor branca" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+    <div class="gallery__item">
+      <img src="images/drink-sangria.jpg" alt="Sangria branca com frutas frescas servida diante do neon do cafe" loading="lazy" />
+      <div class="gallery__item__overlay" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ===================== DELIVERY ===================== -->
+  <section id="delivery" class="delivery" aria-labelledby="delivery-titulo">
+    <p class="section__label reveal" style="justify-content:center;">
+      <span>Encomendar em casa</span>
+    </p>
+    <h2 id="delivery-titulo" class="section__title reveal reveal-delay-1">
+      Receba em casa ou<br /><em>venha buscar</em>
+    </h2>
+    <p class="section__body reveal reveal-delay-2" style="margin: 1rem auto 0; text-align:center;">
+      O nosso brunch tambem chega ate si. Encomende pelo Uber Eats ou Bolt Food e desfrute do Lou's Cafe onde quiser.
+    </p>
+    <div class="delivery__platforms reveal reveal-delay-3">
+      <a
+        href="https://www.ubereats.com/pt-en/store/lous-cafe/5AMnmZWBSp6Gb18EvuQutQ?ps=1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="delivery__platform"
+        aria-label="Encomendar no Uber Eats"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 4.8c3.97 0 7.2 3.23 7.2 7.2s-3.23 7.2-7.2 7.2S4.8 15.97 4.8 12 8.03 4.8 12 4.8zm0 2.4a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6z"/>
+        </svg>
+        Uber Eats
+      </a>
+      <a
+        href="https://food.bolt.eu/en/386-lisbon/p/153321-lous-cafe/info/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="delivery__platform"
+        aria-label="Encomendar no Bolt Food"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M13.5 2L6 14h6l-1.5 8L18 10h-6z"/>
+        </svg>
+        Bolt Food
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section id="avaliacoes" class="reviews" aria-labelledby="reviews-titulo">
+    <div style="max-width:900px; margin:0 auto;">
+      <p class="section__label reveal">O que dizem de nos</p>
+      <h2 id="reviews-titulo" class="section__title reveal reveal-delay-1">
+        <em>528 pessoas</em> ja<br />partilharam a experiencia
+      </h2>
+    </div>
+    <div class="reviews__grid">
+      <article class="review-card reveal">
+        <div class="review-card__stars" aria-label="5 estrelas">
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+        </div>
+        <blockquote class="review-card__text">
+          "Muito boa comida, tem muita variedade de opcoes no cardapio."
+        </blockquote>
+        <p class="review-card__author">Utilizador Google</p>
+      </article>
+      <article class="review-card reveal reveal-delay-1">
+        <div class="review-card__stars" aria-label="5 estrelas">
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+        </div>
+        <blockquote class="review-card__text">
+          "Comida deliciosa e ambiente muito tranquilo, em zona tipica da cidade."
+        </blockquote>
+        <p class="review-card__author">Utilizador Google</p>
+      </article>
+      <article class="review-card reveal reveal-delay-2">
+        <div class="review-card__stars" aria-label="5 estrelas">
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+        </div>
+        <blockquote class="review-card__text">
+          "Otimo atendimento, espaco super agradavel e pratos deliciosos."
+        </blockquote>
+        <p class="review-card__author">Utilizador Google</p>
+      </article>
+    </div>
+    <div class="reviews__rating-block reveal">
+      <span class="reviews__rating-num" data-count="4.8" data-suffix="">4.8</span>
+      <div class="reviews__rating-detail">
+        <div class="reviews__rating-stars" aria-label="4.8 de 5 estrelas">
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+          <span aria-hidden="true">&#9733;</span>
+        </div>
+        <p class="reviews__rating-count">528 avaliacoes no Google</p>
+        <a
+          href="https://www.google.com/search?q=lou%27s+caf%C3%A9+lisboa"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="font-size:0.78rem; color: var(--gold); text-decoration:underline; margin-top:0.3rem; display:block;"
+        >
+          Ver todas as recensoes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEON / ATMOSPHERE ===================== -->
+  <section class="about" aria-label="Atmosfera do Lou's Cafe" style="direction: rtl;">
+    <div class="about__image reveal" style="direction: ltr;">
+      <img
+        src="images/neon.png"
+        alt="Neon azul Drink and Talk na parede do Lou's Cafe Lisboa com plantas e banco bar"
+        width="800"
+        height="600"
+        loading="lazy"
+      />
+    </div>
+    <div class="about__content" style="direction: ltr;">
+      <p class="section__label reveal">Atmosfera</p>
+      <h2 class="section__title reveal reveal-delay-1">
+        Um espaco para<br /><em>beber e conversar</em>
+      </h2>
+      <p class="section__body reveal reveal-delay-2">
+        O Lou's Cafe e muito mais do que um restaurante. E um ponto de encontro, um escritorio improvisado, um lugar de partilha. O neon "Drink &amp; Talk" na nossa parede diz tudo aquilo que somos.
+      </p>
+      <p class="section__body mt-sm reveal reveal-delay-3">
+        Plantas, luz natural, cadeiras confortaveis e uma equipa que o recebe pelo nome. Este e o ambiente que nos define.
+      </p>
+      <div class="mt-md reveal reveal-delay-4">
+        <a href="https://www.instagram.com/louscafe.lisboa/" target="_blank" rel="noopener noreferrer" class="btn btn--dark">
+          Ver no Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOURS & LOCATION ===================== -->
+  <section id="horarios" class="info" aria-label="Horarios e localizacao do Lou's Cafe">
+    <div class="info__block info__block--hours">
+      <p class="section__label">Horario</p>
+      <h2 class="section__title reveal">Estamos<br /><em>quase sempre ca</em></h2>
+      <ul class="hours-list reveal reveal-delay-1" role="list" aria-label="Horario de funcionamento">
+        <li data-day="domingo">
+          <span class="day">Domingo</span>
+          <span class="time">07:30 - 22:30</span>
+        </li>
+        <li data-day="segunda">
+          <span class="day">Segunda-feira</span>
+          <span class="time">07:00 - 23:00</span>
+        </li>
+        <li data-day="terca">
+          <span class="day">Terca-feira</span>
+          <span class="time">07:00 - 20:00</span>
+        </li>
+        <li data-day="quarta">
+          <span class="day">Quarta-feira</span>
+          <span class="time">07:00 - 20:00</span>
+        </li>
+        <li data-day="quinta">
+          <span class="day">Quinta-feira</span>
+          <span class="time">07:00 - 20:00</span>
+        </li>
+        <li data-day="sexta">
+          <span class="day">Sexta-feira</span>
+          <span class="time">07:00 - 23:30</span>
+        </li>
+        <li data-day="sabado">
+          <span class="day">Sabado</span>
+          <span class="time">07:30 - 23:30</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="info__block info__block--location">
+      <p class="section__label">Localizacao</p>
+      <h2 class="section__title reveal">Encontre-nos<br /><em>no centro de Lisboa</em></h2>
+      <div class="location-detail reveal reveal-delay-1">
+        <strong>Morada</strong>
+        <p>Rua do Poco dos Negros 131<br />1200-337 Lisboa, Portugal</p>
+        <strong>Contacto</strong>
+        <p>
+          <a href="tel:+351938495560" style="color:inherit; font-weight:700;">+351 938 495 560</a><br />
+          <a href="mailto:louscafe.lisboa@gmail.com" style="color:inherit;">louscafe.lisboa@gmail.com</a>
+        </p>
+        <strong>Entrega disponivel</strong>
+        <p>Uber Eats e Bolt Food</p>
+      </div>
+      <a
+        href="https://maps.app.goo.gl/Vs4uvQ3vFG6uNQV38"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="location-map-link reveal reveal-delay-2"
+        aria-label="Abrir morada no Google Maps"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Ver no Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM SOCIAL ===================== -->
+  <section class="social" aria-labelledby="social-titulo">
+    <p class="section__label reveal" style="justify-content:center;">Siga-nos</p>
+    <span class="social__handle reveal reveal-delay-1">@louscafe.lisboa</span>
+    <h2 id="social-titulo" class="section__title reveal reveal-delay-2">
+      O nosso dia a dia<br /><em>no Instagram</em>
+    </h2>
+    <div class="social__grid" aria-label="Galeria do Instagram">
+      <div class="social__item reveal">
+        <img src="images/food-cookie.jpg" alt="Cookie red velvet com canela e flor azul no Lou's Cafe" loading="lazy" />
+      </div>
+      <div class="social__item reveal reveal-delay-1">
+        <img src="images/drink-latte.jpg" alt="Matcha latte servido em copo transparente" loading="lazy" />
+      </div>
+      <div class="social__item reveal reveal-delay-2">
+        <img src="images/drink-iced.jpg" alt="Cafe gelado com caneco de vidro facetado" loading="lazy" />
+      </div>
+      <div class="social__item reveal reveal-delay-3">
+        <img src="images/food-prosciutto.jpg" alt="Tosta de presunto com rucola e vinagrete" loading="lazy" />
+      </div>
+    </div>
+    <div class="mt-lg reveal">
+      <a
+        href="https://www.instagram.com/louscafe.lisboa/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--dark"
+        aria-label="Seguir Lou's Cafe no Instagram"
+      >
+        Seguir no Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div>
+        <div class="footer__logo">
+          <img src="images/logo.png" alt="Lou's Cafe Lisboa" width="110" height="50" loading="lazy" />
+        </div>
+        <p class="footer__tagline">"Cafe de qualidade, feito com amor."</p>
+        <p class="footer__desc">
+          Restaurante de brunch gourmet em Lisboa.<br />
+          Rua do Poco dos Negros 131, 1200-337.
+        </p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Navegacao</p>
+        <ul role="list">
+          <li><a href="#sobre">O Cafe</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#menu">Cardapio</a></li>
+          <li><a href="#delivery">Entrega</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Contactos</p>
+        <p>
+          <a href="tel:+351938495560" style="color:inherit; display:block; margin-bottom:0.4rem;">+351 938 495 560</a>
+          <a href="mailto:louscafe.lisboa@gmail.com" style="color:inherit; display:block; margin-bottom:1rem;">louscafe.lisboa@gmail.com</a>
+        </p>
+        <p class="footer__col-title" style="margin-top:1rem;">Redes Sociais</p>
+        <ul role="list">
+          <li><a href="https://www.instagram.com/louscafe.lisboa/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.facebook.com/lousbrunchlisboa" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://louscafelisboa.menulegal.app/" target="_blank" rel="noopener noreferrer">Cardapio Online</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Lou's Cafe Lisboa. Todos os direitos reservados.</p>
+      <p class="footer__credit">
+        Desenvolvido por <a href="https://www.instagram.com/agencianooma/" target="_blank" rel="noopener noreferrer">Agencia NOOMA</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
