@@ -388,6 +388,15 @@ ul { list-style: none; }
   justify-content: center;
   background: var(--white);
 }
+/* Graos de cafe decorativos */
+.about__beans {
+  width: 160px;
+  opacity: 0.55;
+  margin: 1.2rem 0 0.2rem;
+  mix-blend-mode: multiply;
+}
+
+/* ---- About Stats ---- */
 .about__stats {
   display: flex;
   gap: 2.5rem;
@@ -411,44 +420,73 @@ ul { list-style: none; }
   margin-top: 0.3rem;
 }
 
-/* ============ GALLERY GRID ============ */
-.gallery {
+/* ============ GALLERY GRID (CORRIGIDO) ============ */
+.gallery-section {
+  line-height: 0; /* remove gap between inline-block items */
+}
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-auto-rows: 320px;
   gap: 0;
 }
-.gallery__item {
+/* First item spans 2 columns */
+.gallery-grid > .gallery-item:first-child {
+  grid-column: span 2;
+}
+/* 4-equal grid (food strip) */
+.gallery-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.gallery-grid--4 > .gallery-item:first-child {
+  grid-column: span 1; /* override the span-2 above */
+}
+
+.gallery-item {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 4/5;
-  cursor: pointer;
+  /* No aspect-ratio here so grid-auto-rows controls the height */
 }
-.gallery__item--wide {
-  grid-column: span 2;
-  aspect-ratio: 8/5;
-}
-.gallery__item--tall {
-  grid-row: span 2;
-  aspect-ratio: 4/10;
-}
-.gallery__item img {
+.gallery-item img {
   width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.7s var(--transition);
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.gallery__item:hover img { transform: scale(1.07); }
-.gallery__item__overlay {
+.gallery-item:hover img { transform: scale(1.07); }
+.gallery-item__overlay {
   position: absolute;
   inset: 0;
   background: rgba(28,24,20,0);
-  transition: background var(--transition);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: background 0.4s ease;
 }
-.gallery__item:hover .gallery__item__overlay {
-  background: rgba(28,24,20,0.3);
+.gallery-item:hover .gallery-item__overlay {
+  background: rgba(28,24,20,0.25);
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 260px;
+  }
+  .gallery-grid > .gallery-item:first-child {
+    grid-column: span 2;
+  }
+  .gallery-grid--4 > .gallery-item:first-child {
+    grid-column: span 1;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+  .gallery-grid > .gallery-item:first-child {
+    grid-column: span 2;
+  }
+  .gallery-grid--4 > .gallery-item:first-child {
+    grid-column: span 1;
+  }
 }
 
 /* ============ MENU CTA SECTION ============ */
@@ -726,10 +764,10 @@ ul { list-style: none; }
   border-bottom: 1px solid rgba(247,243,238,0.1);
 }
 .footer__logo img {
-  height: 56px;
+  height: 72px;
   width: auto;
   margin-bottom: 1.2rem;
-  filter: brightness(0) invert(1) opacity(0.85);
+  /* logo-transparent.png funciona bem sobre fundo escuro sem filtros */
 }
 .footer__tagline {
   font-family: var(--font-display);
