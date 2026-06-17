@@ -515,7 +515,80 @@ ul { list-style: none; }
   .gallery-grid { grid-auto-rows: 200px; }
 }
 
-/* ============ MENU CTA SECTION ============ */
+/* ============ WHATSAPP BUTTONS ============ */
+
+/* Nav CTA com icone WhatsApp */
+.nav__cta--wa {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+}
+.nav__cta--wa svg { flex-shrink: 0; }
+
+/* Botao hero WhatsApp */
+.btn--wa {
+  background: rgba(255,255,255,0.12);
+  color: var(--white);
+  border-color: rgba(255,255,255,0.5);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.btn--wa:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: var(--white);
+}
+.btn--wa svg { flex-shrink: 0; }
+
+/* Botao de reserva na secção de horários */
+.wa-reserve-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.8rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.35);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+.wa-reserve-btn:hover {
+  background: #25D366;
+  border-color: #25D366;
+}
+.wa-reserve-btn svg { flex-shrink: 0; }
+
+/* Variante dourada para o bloco de localização */
+.wa-reserve-btn--gold {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.4);
+  color: var(--white);
+  margin-top: 0;
+}
+.wa-reserve-btn--gold:hover {
+  background: #25D366;
+  border-color: #25D366;
+}
+
+/* Floating WhatsApp button */
+.menu-float__btn--wa {
+  background: #1C1814;
+  border: 1.5px solid rgba(255,255,255,0.12);
+}
+.menu-float__btn--wa:hover {
+  background: #25D366 !important;
+  border-color: #25D366;
+}
+
+
 .menu-cta {
   text-align: center;
   padding: 7rem 4vw;
