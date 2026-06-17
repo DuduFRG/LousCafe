@@ -420,32 +420,35 @@ ul { list-style: none; }
   margin-top: 0.3rem;
 }
 
-/* ============ GALLERY GRID (CORRIGIDO) ============ */
-.gallery-section {
-  line-height: 0; /* remove gap between inline-block items */
-}
-.gallery-grid {
+/* ============ GALLERY MOSAIC (grid-template-areas, sem celulas vazias) ============ */
+.gallery-section { line-height: 0; }
+
+.gallery-mosaic {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 320px;
+  grid-template-rows: 300px 300px 300px;
   gap: 0;
+  grid-template-areas:
+    "a  a  b  c"
+    "d  e  f  g"
+    "h  i  j  k";
 }
-/* First item spans 2 columns */
-.gallery-grid > .gallery-item:first-child {
-  grid-column: span 2;
-}
-/* 4-equal grid (food strip) */
-.gallery-grid--4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-.gallery-grid--4 > .gallery-item:first-child {
-  grid-column: span 1; /* override the span-2 above */
-}
+
+.gm-a { grid-area: a; }
+.gm-b { grid-area: b; }
+.gm-c { grid-area: c; }
+.gm-d { grid-area: d; }
+.gm-e { grid-area: e; }
+.gm-f { grid-area: f; }
+.gm-g { grid-area: g; }
+.gm-h { grid-area: h; }
+.gm-i { grid-area: i; }
+.gm-j { grid-area: j; }
+.gm-k { grid-area: k; }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
-  /* No aspect-ratio here so grid-auto-rows controls the height */
 }
 .gallery-item img {
   width: 100%; height: 100%;
@@ -461,32 +464,55 @@ ul { list-style: none; }
   transition: background 0.4s ease;
 }
 .gallery-item:hover .gallery-item__overlay {
-  background: rgba(28,24,20,0.25);
+  background: rgba(28,24,20,0.22);
+}
+
+/* Responsive: tablet - 2 colunas com empilhamento */
+@media (max-width: 900px) {
+  .gallery-mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 240px);
+    grid-template-areas:
+      "a  a"
+      "b  c"
+      "d  e"
+      "f  g"
+      "h  i"
+      "j  k";
+  }
+}
+
+/* Mobile: 1 coluna */
+@media (max-width: 520px) {
+  .gallery-mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 180px);
+    grid-template-areas:
+      "a  a"
+      "b  c"
+      "d  e"
+      "f  g"
+      "h  i"
+      "j  k";
+  }
+}
+
+/* Manter grid-grid para food strip caso ainda usado */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 320px;
+  gap: 0;
+}
+.gallery-grid--4 > .gallery-item:first-child {
+  grid-column: span 1;
 }
 
 @media (max-width: 1024px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 260px;
-  }
-  .gallery-grid > .gallery-item:first-child {
-    grid-column: span 2;
-  }
-  .gallery-grid--4 > .gallery-item:first-child {
-    grid-column: span 1;
-  }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 260px; }
 }
 @media (max-width: 600px) {
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 200px;
-  }
-  .gallery-grid > .gallery-item:first-child {
-    grid-column: span 2;
-  }
-  .gallery-grid--4 > .gallery-item:first-child {
-    grid-column: span 1;
-  }
+  .gallery-grid { grid-auto-rows: 200px; }
 }
 
 /* ============ MENU CTA SECTION ============ */
