@@ -76,6 +76,12 @@
   }
   </script>
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
+  <meta name="theme-color" content="#F7F3EE" />
+
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -88,7 +94,7 @@
   <!-- ===================== NAVIGATION ===================== -->
   <nav class="nav" aria-label="Navegacao principal">
     <a href="#inicio" class="nav__logo" aria-label="Lou's Cafe - Voltar ao inicio">
-      <img src="images/logo.png" alt="Lou's Cafe Lisboa logo" width="120" height="54" />
+      <img src="images/logo-white-bg.png" alt="Lou's Cafe Lisboa logo" width="120" height="54" />
     </a>
 
     <ul class="nav__links" role="list">
@@ -174,6 +180,7 @@
       <p class="section__body mt-sm reveal reveal-delay-3">
         Na Rua do Poco dos Negros, no coracão de Lisboa, somos o destino favorito de quem valoriza qualidade, autenticidade e um atendimento que faz a diferenca.
       </p>
+      <img src="images/coffee-beans.png" alt="" aria-hidden="true" class="about__beans" loading="lazy" />
       <div class="about__stats reveal reveal-delay-4">
         <div>
           <span class="about__stat-num" data-count="4.8" data-suffix="">4.8</span>
@@ -192,38 +199,40 @@
   </section>
 
   <!-- ===================== GALLERY ===================== -->
-  <section id="galeria" class="gallery" aria-label="Galeria de imagens do Lou's Cafe">
-    <div class="gallery__item gallery__item--wide">
-      <img src="images/interior-2.jpg" alt="Zona de bancos com mesas verdes e decoracao boho do Lou's Cafe" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/food-salmon.jpg" alt="Filete de salmao grelhado sobre salada com flores comestiveis" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/drink-cappuccino.jpg" alt="Cappuccino com latte art servido em chavena rosa" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/food-avocado.jpg" alt="Tostas de abacate com ovo escalfado e flores comestiveis" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/food-eggs-benedict.jpg" alt="Ovos benedict com molho holandes e salada de folhas" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/drink-smoothie.jpg" alt="Smoothie de frutos vermelhos e limonada natural servidos no Lou's Cafe" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/food-croissant.jpg" alt="Croissant recheado com chocolate e avelas com acucar em po" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/food-spread.jpg" alt="Selecao de pratos de brunch do Lou's Cafe com smoothie verde" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
+  <section id="galeria" class="gallery-section" aria-label="Galeria de imagens do Lou's Cafe">
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--wide">
+        <img src="images/interior-2.jpg" alt="Zona de bancos com mesas verdes e decoracao boho do Lou's Cafe" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/food-salmon.jpg" alt="Filete de salmao grelhado sobre salada com flores comestiveis" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/drink-cappuccino.jpg" alt="Cappuccino com latte art servido em chavena rosa" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/food-avocado.jpg" alt="Tostas de abacate com ovo escalfado e flores comestiveis" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/food-eggs-benedict.jpg" alt="Ovos benedict com molho holandes e salada de folhas" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/drink-smoothie.jpg" alt="Smoothie de frutos vermelhos e limonada natural servidos no Lou's Cafe" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/food-croissant.jpg" alt="Croissant recheado com chocolate e avelas com acucar em po" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/food-spread.jpg" alt="Selecao de pratos de brunch do Lou's Cafe com smoothie verde" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
     </div>
   </section>
 
@@ -254,22 +263,24 @@
   </section>
 
   <!-- ===================== FOOD STRIP ===================== -->
-  <section class="gallery" aria-label="Mais pratos do Lou's Cafe">
-    <div class="gallery__item">
-      <img src="images/food-prosciutto.jpg" alt="Tosta com presunto, figos e rucola com vinagrete" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/food-pancake.jpg" alt="Panqueca americana com guacamole e ovo escalfado" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/drink-green.jpg" alt="Smoothie verde com laranja desidratada e flor branca" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="gallery__item">
-      <img src="images/drink-sangria.jpg" alt="Sangria branca com frutas frescas servida diante do neon do cafe" loading="lazy" />
-      <div class="gallery__item__overlay" aria-hidden="true"></div>
+  <section class="gallery-section" aria-label="Mais pratos do Lou's Cafe">
+    <div class="gallery-grid gallery-grid--4">
+      <div class="gallery-item">
+        <img src="images/food-prosciutto.jpg" alt="Tosta com presunto, figos e rucola com vinagrete" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/food-pancake.jpg" alt="Panqueca americana com guacamole e ovo escalfado" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/drink-green.jpg" alt="Smoothie verde com laranja desidratada e flor branca" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/drink-sangria.jpg" alt="Sangria branca com frutas frescas servida diante do neon do cafe" loading="lazy" />
+        <div class="gallery-item__overlay" aria-hidden="true"></div>
+      </div>
     </div>
   </section>
 
@@ -520,7 +531,7 @@
     <div class="footer__top">
       <div>
         <div class="footer__logo">
-          <img src="images/logo.png" alt="Lou's Cafe Lisboa" width="110" height="50" loading="lazy" />
+          <img src="images/logo-transparent.png" alt="Lou's Cafe Lisboa" width="110" height="50" loading="lazy" />
         </div>
         <p class="footer__tagline">"Cafe de qualidade, feito com amor."</p>
         <p class="footer__desc">
